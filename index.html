@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HomeWork E3(110)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: rgb(42, 91, 165);">BILLING SYSTEM BY PHAT CHETRA</h1>
+        <div class="add-item">
+            <h2>Add Item</h2>
+            <div class="input-group">
+                <input type="text" id="item-name" placeholder="Item name">
+                <input type="number" id="item-price" placeholder="Item price">
+                <input type="number" id="item-quantity" placeholder="Item quantity">
+                <button onclick="addItem()">Add</button>
+            </div>
+        </div>
+        <div class="items">
+            <h2 style="color: rgb(255, 178, 127);">Item</h2>  
+            <ul id="item-list"></ul>
+        </div>
+        <div class="total">
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <p id="total-price"></p>
+        </div>
+        <div class="invoice">
+            <h2>Invoice</h2>
+            <ul id="invoice-list"></ul>
+            <button onclick="generateInvoice()">Generate Invoice</button>
+        </div>
+    </div>
+
+    <footer>
+        <p style="color: brown;">&copy;2024 BY CHETRA. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
